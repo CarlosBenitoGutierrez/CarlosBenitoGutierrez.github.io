@@ -1,0 +1,88 @@
+body {
+    background-color: yellow;
+}
+
+a:link   {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+h2 {
+    text-align : right;
+}
+
+.header {
+color:red;
+text-align: center;
+}
+
+.largeletter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.redfont {
+    color: red;
+}
+
+.blueword {
+    color: blue;
+}
+
+#thirtyfont {
+    font-size: 30px;
+}
+
+table {
+    background-color: #FFFF00;
+    border-spacing: 5px;
+    animation-name: tableanimate;
+    animation-duration: 10s;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    animation-name: tablefontchange;
+    animation-duration: 10s;
+}
+
+@keyframes tableanimate {
+    from {background-color: yellow; color:black;}
+    to {background-color: green; color: white;}
+}
+
+@keyframes tablefontchange {
+    from {color:black;}
+    to { color: white;}
+}
+
+@keyframes bannerLeftToRight {
+    
+    0%   {margin-left: 0;}
+    50%  {margin-right: 100%;}
+    100% {margin-left: 0;}
+    
+    
+}
+
+
+.movingbanner {
+   
+    display: inline-block;
+    animation-name: bannerLeftToRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.wrapper {
+     text-align: right;
+    max-width: 100%;
+}
